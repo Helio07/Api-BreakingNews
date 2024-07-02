@@ -1,7 +1,7 @@
 import mongoose from 'mongoose'
 
 const connectDB = () => {
-    mongoose.connect("mongodb+srv://root:77db77@cluster0.i6qivic.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",)
+    mongoose.connect(process.env.MONGODB_URI)
     .then(() => console.log("MongoDB Atlas Conectado"))
     .catch(err => console.log(err))
 
