@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose'
 
 const connectDB = () => {
     mongoose.connect("mongodb+srv://root:77db77@cluster0.i6qivic.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",)
@@ -7,4 +7,4 @@ const connectDB = () => {
 
 }
 
-module.exports = connectDB;
+export default connectDB;
